@@ -71,11 +71,11 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
 		    	<activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@android:style/Theme.Holo.Light">
             </activity>
-			<application android:requestLegacyExternalStorage="true" />
 		</config-file>
 		
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		    <application android:requestLegacyExternalStorage="true" />
 		</config-file>
 
 		<source-file src="src/android/com/synconset/ImagePicker/ImagePicker.java" target-dir="src/com/synconset" />
