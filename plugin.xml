@@ -76,6 +76,10 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		</config-file>
+		
+		<edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+        		<application android:requestLegacyExternalStorage="true" />
+		</edit-config>
 
 		<source-file src="src/android/com/synconset/ImagePicker/ImagePicker.java" target-dir="src/com/synconset" />
 		<source-file src="src/android/com/synconset/ImagePicker/FakeR.java" target-dir="src/com/synconset" />
